@@ -37,8 +37,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-bold mb-2">Telepon / WhatsApp</h3>
-                      <p className="text-muted-foreground">+62 812-3456-7890</p>
-                      <p className="text-muted-foreground">+62 813-9876-5432</p>
+                      <p className="text-muted-foreground">081342222747</p>
+                      <p className="text-muted-foreground">082222208747</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -50,8 +50,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-bold mb-2">Email</h3>
-                      <p className="text-muted-foreground">info@pendopotrans.com</p>
-                      <p className="text-muted-foreground">cs@pendopotrans.com</p>
+                      <p className="text-muted-foreground">pendopotrans@gmail.com</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -64,9 +63,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-bold mb-2">Alamat</h3>
                       <p className="text-muted-foreground">
-                        Jl. Magelang No. 123<br />
-                        Yogyakarta 55284<br />
-                        Indonesia
+                        Jl. Perumnas, Dabag, Condongcatur<br />
+                        Kec. Depok, Kabupaten Sleman<br />
+                        Daerah Istimewa Yogyakarta 55281
                       </p>
                     </div>
                   </CardContent>

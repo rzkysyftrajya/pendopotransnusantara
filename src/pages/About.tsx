@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { FileText, Building, Award } from "lucide-react";
+import Team from "@/components/Team";
 
 const About = () => {
   return (
@@ -111,6 +112,56 @@ const About = () => {
         </div>
       </section>
 
+      {/* Visi & Misi Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Visi Kami</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Menjadi perusahaan transportasi dan pariwisata terdepan di
+                Yogyakarta yang dikenal karena pelayanan prima, inovasi,
+                dan kontribusi positif terhadap pariwisata lokal.
+              </p>
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Misi Kami</h2>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                    <span className="text-white font-bold">1</span>
+                  </div>
+                  <p className="text-lg text-muted-foreground">
+                    Memberikan layanan transportasi yang aman, nyaman, dan
+                    tepat waktu.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                    <span className="text-white font-bold">2</span>
+                  </div>
+                  <p className="text-lg text-muted-foreground">
+                    Menyediakan paket wisata yang menarik, berkesan, dan
+                    sesuai dengan kebutuhan pelanggan.
+                  </p>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                    <span className="text-white font-bold">3</span>
+                  </div>
+                  <p className="text-lg text-muted-foreground">
+                    Mengembangkan tim yang profesional, solid, dan
+                    berorientasi pada kepuasan pelanggan.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Team />
+
       {/* Legalitas Section */}
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
@@ -167,3 +218,4 @@ const About = () => {
 };
 
 export default About;
+
