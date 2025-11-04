@@ -21,15 +21,15 @@ const Header = () => {
   const whatsappNumber = "6281378641157";
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center hover:opacity-80 transition-opacity"
+            className="flex items-center hover:opacity-90 transition-all duration-300 group"
           >
-            <div className="text-2xl font-bold bg-gradient-to-r from-red-600 via-rose-500 to-red-400 bg-clip-text text-transparent">
+            <div className="text-2xl font-bold bg-gradient-to-r from-red-600 via-rose-500 to-red-400 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300">
               Pendopo Trans Nusantara
             </div>
           </Link>
@@ -40,10 +40,10 @@ const Header = () => {
               <Link
                 key={item.label}
                 to={item.href}
-                className={`font-medium transition-colors ${
+                className={`font-medium transition-all duration-300 px-3 py-2 rounded-lg ${
                   isActive(item.href)
-                    ? "text-primary font-bold"
-                    : "text-foreground hover:text-primary"
+                    ? "text-red-600 font-bold bg-red-50"
+                    : "text-gray-700 hover:text-red-600 hover:bg-red-50"
                 }`}
               >
                 {item.label}
@@ -54,10 +54,13 @@ const Header = () => {
           {/* WhatsApp Button */}
           <div className="hidden md:block">
             <div className="text-right">
-              <p className="text-sm text-muted-foreground">
-                Need help booking?
+              <p className="text-sm text-gray-600 font-medium">
+                Butuh bantuan booking?
               </p>
-              <p className="text-sm font-medium">081378641157 / 085640644321</p>
+              <div className="flex flex-col gap-1">
+                <p className="text-sm font-bold text-red-600">081378641157</p>
+                <p className="text-sm font-bold text-red-600">085640644321</p>
+              </div>
             </div>
           </div>
 
