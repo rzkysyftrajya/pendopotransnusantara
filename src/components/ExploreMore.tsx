@@ -43,19 +43,19 @@ const links = [
 
 const ExploreMore = () => {
   return (
-    <section className="py-20 md:py-28 bg-gray-50">
+    <section className="py-16 md:py-20 lg:py-28 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gradient mb-4">
             Jelajahi Lebih Lanjut
           </h2>
-          <p className="text-xl text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg lg:text-xl text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
             Temukan semua informasi yang Anda butuhkan untuk merencanakan
             perjalanan sempurna Anda di Yogyakarta.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto mt-6 rounded-full"></div>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {links.map((item, index) => (
             <Link
               to={item.link}

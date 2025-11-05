@@ -17,7 +17,7 @@ import TravelBlog from "@/components/TravelBlog";
 import ExploreMore from "@/components/ExploreMore";
 
 const Home = () => {
-  const featuredPackages = oneDayPackages.slice(0, 3);
+  const featuredPackages = oneDayPackages.filter((p) => p.featured);
   const featuredCars = cars.slice(0, 4);
   const whatsappNumber = "6281378641157";
 

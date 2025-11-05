@@ -1,13 +1,7 @@
+import { menuItems } from "@/lib/menu-items";
 import { Mail, Phone, Instagram } from "lucide-react";
 
 const Footer = () => {
-  const quickLinks = [
-    { label: "Paket Wisata", href: "/paket-wisata" },
-    { label: "Sewa Mobil", href: "/sewa-mobil" },
-    { label: "FAQS", href: "/faq" },
-    { label: "Syarat dan Ketentuan", href: "/terms" },
-  ];
-
   return (
     <footer
       id="kontak"
@@ -90,7 +84,7 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-6 text-white">Informasi</h4>
             <ul className="space-y-3">
-              {quickLinks.map((link, index) => (
+              {menuItems.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
