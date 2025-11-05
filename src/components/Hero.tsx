@@ -88,9 +88,9 @@ const Hero = () => {
                   href={`https://wa.me/${whatsappNumber}?text=Halo,%20saya%20ingin%20sewa%20mobil`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-lg"
+                  className="flex items-center gap-3 text-base md:text-lg"
                 >
-                  <span>Pilihan Mobil</span>
+                  <span>Book Your Journey</span>
                   <ArrowRight className="w-5 h-5 animate-bounce" />
                 </a>
               </Button>
