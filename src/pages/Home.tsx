@@ -70,7 +70,7 @@ const Home = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative h-[90vh] min-h-[600px] text-white overflow-hidden">
+      <section className="relative mt-20 h-[90vh] min-h-[600px] text-white overflow-hidden">
         {/* Enhanced background with overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/70 z-10"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-red-900/20 to-transparent z-10"></div>
@@ -79,11 +79,13 @@ const Home = () => {
           src="/hero-section-home.svg"
           alt="Hero Section Home"
           className="absolute inset-0 w-full h-full object-cover scale-105"
+          loading="eager"
+          fetchpriority="high"
         />
 
 
 
-        <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center text-center md:text-left">
+        <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center text-center md:text-left pt-24">
           <div className="animate-slide-in-up">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-6 text-gradient shadow-text">
               Jelajahi Yogyakarta, <br />
@@ -121,12 +123,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Scroll indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
-            </div>
-          </div>
+
         </div>
       </section>
 
