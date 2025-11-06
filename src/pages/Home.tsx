@@ -87,45 +87,35 @@ const Home = () => {
 
         <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center text-center md:text-left pt-24">
           <div className="animate-slide-in-up">
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-6 text-gradient shadow-text">
-              Jelajahi Yogyakarta, <br />
-              <span className="text-white">Senyaman di Rumah Sendiri</span>
+            <h1 className="text-4xl md:text-7xl font-bold tracking-tight leading-tight mb-6 text-gradient shadow-text">
+              Selamat datang di <br />
+              <span className="text-white">Pendopo Trans Nusantara</span>
             </h1>
             <p
-              className="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto md:mx-0 mb-10 leading-relaxed font-light animate-slide-in-up"
+              className="text-lg md:text-2xl text-gray-100 max-w-3xl mx-auto md:mx-0 mb-10 leading-relaxed font-light animate-slide-in-up"
               style={{ animationDelay: "0.2s" }}
             >
-              Solusi rental mobil dan paket wisata terbaik di Jogja. Nikmati
-              perjalanan tak terlupakan dengan layanan profesional dan harga
-              terjangkau.
+              Mau liburan di Jogja atau sedang membutuhkan sewa kendaraan ?
+              Kami siap memberikan solusi terbaik untuk kebutuhan perjalanan
+              Anda, dari perencanaan hingga pelaksanaan, memastikan setiap
+              momen liburan Anda menjadi pengalaman yang tak terlupakan.
             </p>
-            <div
-              className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start animate-slide-in-up"
-              style={{ animationDelay: "0.4s" }}
-            >
-              <Button asChild size="lg" className="btn-primary hover-lift">
-                <Link to="/paket-wisata" className="flex items-center gap-2">
-                  <span>Lihat Paket Wisata</span>
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="btn-secondary glass hover-glow"
-              >
-                <Link to="/sewa-mobil" className="flex items-center gap-2">
-                  <Car className="w-5 h-5" />
-                  <span>Pilihan Mobil</span>
-                </Link>
-              </Button>
-            </div>
-          </div>
-
-
-        </div>
-      </section>
+                        <div
+                          className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start animate-slide-in-up"
+                          style={{ animationDelay: "0.4s" }}
+                        >
+                          <Button asChild size="lg" className="btn-primary hover-lift">
+                            <Link to="/paket-wisata" className="flex items-center gap-2">
+                              <span>Lihat Paket Wisata</span>
+                              <ArrowRight className="w-5 h-5" />
+                            </Link>
+                          </Button>
+                                                  </div>
+                      </div>
+            
+            
+                    </div>
+                  </section>
 
       {/* Featured Tour Packages */}
       <section className="py-20 md:py-28 gradient-secondary relative overflow-hidden">

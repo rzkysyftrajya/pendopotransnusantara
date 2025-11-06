@@ -366,33 +366,8 @@ All colors MUST be HSL.
   }
 }
 
-@keyframes pulseGlow {
-  0%,
-  100% {
-    box-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 30px rgba(220, 38, 38, 0.8), 0 0 40px rgba(220, 38, 38, 0.6);
-  }
-}
 
-@keyframes magnetic {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  25% {
-    transform: translate(5px, -5px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-3px, 3px) rotate(-1deg);
-  }
-  75% {
-    transform: translate(3px, -3px) rotate(0.5deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-}
+
 
 /* Utility Classes */
 .animate-float {

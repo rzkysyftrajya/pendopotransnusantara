@@ -13,7 +13,7 @@ const FloatingWhatsAppButton = () => {
       className="floating-whatsapp"
       aria-label="Hubungi via WhatsApp"
     >
-      <img src="/icon.png" alt="WhatsApp Icon" className="w-7 h-7" />
+      <img src="/icon.png" alt="WhatsApp Icon" className="w-12 h-12" />
     </a>
   );
 };

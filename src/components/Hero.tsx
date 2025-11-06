@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       id="beranda"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden mt-20"
     >
       {/* Enhanced Background with Glassmorphism */}
       <div className="absolute inset-0 z-0">
@@ -28,7 +28,7 @@ const Hero = () => {
           ></div>
           <div
             className="absolute bottom-32 left-40 w-3 h-3 bg-red-300 rounded-full animate-float opacity-50"
-            style={{ animationDelay: "4s" }}
+            style={{ animationDelay: "4s" }
           ></div>
           <div
             className="absolute top-60 right-20 w-1.5 h-1.5 bg-white rounded-full animate-float opacity-30"
@@ -64,7 +64,7 @@ const Hero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 relative z-10 mt-20 pt-20 md:pt-24">
+      <div className="container mx-auto px-4 relative z-10 pt-20 md:pt-24">
         <div className="max-w-4xl ml-auto">
           <div className="text-right animate-slide-in-right">
             <div className="mb-6 md:mb-8">

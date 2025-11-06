@@ -86,7 +86,7 @@ const Header = () => {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="glass-card">
+            <SheetContent side="left" className="glass-card overflow-y-auto max-h-screen">
               <div className="flex flex-col space-y-6 p-6">
                 <Link to="/" className="mb-6 flex items-center">
                   <div className="w-10 h-10 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center shadow-lg mr-3 overflow-hidden">
