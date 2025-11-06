@@ -35,7 +35,7 @@ const SewaMobil = () => {
         <section className="relative bg-gray-900 text-white py-20 md:py-32">
           <div className="absolute inset-0 z-0">
             <img
-              src="/hero-section-sewa-mobil.svg"
+              src="/hero-section-sewa-mobil.webp"
               alt="Car rental in Yogyakarta"
               className="w-full h-full object-cover opacity-40"
             />

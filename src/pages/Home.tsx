@@ -76,7 +76,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-red-900/20 to-transparent z-10"></div>
 
         <img
-          src="/hero-section-home.svg"
+          src="/hero-section-home.webp"
           alt="Hero Section Home"
           className="absolute inset-0 w-full h-full object-cover scale-105"
           loading="eager"

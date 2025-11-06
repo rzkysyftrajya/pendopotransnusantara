@@ -71,7 +71,7 @@ const PaketWisata = () => {
         <section className="relative bg-gray-900 text-white py-16 md:py-24 lg:py-32">
           <div className="absolute inset-0 z-0">
             <img
-              src="/hero-section-paket-wisata.svg"
+              src="/hero-section-paket-wisata.webp"
               alt="Landscape Yogyakarta"
               className="w-full h-full object-cover opacity-40"
             />
@@ -193,7 +193,7 @@ const PaketWisata = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               <div
                 className="text-center group cursor-pointer p-4 md:p-6"
-                onClick={() => window.open("/about", "_self")}
+                onClick={() => window.open("/tentang", "_self")}
               >
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-200 transition-colors">
                   <Users className="w-6 h-6 md:w-8 md:h-8 text-red-600" />

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 
-const heroImage = "/hero-section-home.svg";
+const heroImage = "/hero-section-home.webp";
 
 const Hero = () => {
   const whatsappNumber = "6281234567890";
