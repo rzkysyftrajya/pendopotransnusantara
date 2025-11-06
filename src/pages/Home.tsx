@@ -13,8 +13,52 @@ import Testimonials from "@/components/Testimonials";
 import { PackageCard } from "@/components/PackageCard";
 import { oneDayPackages } from "@/lib/packages";
 import { cars } from "@/lib/cars";
-import TravelBlog from "@/components/TravelBlog";
 import ExploreMore from "@/components/ExploreMore";
+import { Card, CardContent } from "@/components/ui/card";
+import { Calendar, User, ExternalLink } from "lucide-react";
+
+const blogPosts = [
+  {
+    title: "Membuat cerita indah di Pantai Indrayanti",
+    author: "admin_pendopotour",
+    date: "July 28, 2025",
+    excerpt:
+      "Apa Itu Pantai Indrayanti? Pantai Indrayanti adalah salah satu pantai populer di Gunungkidul, Yogyakarta, yang dikenal dengan keindahan pasir putih bersih dan panorama laut biru...",
+    image: "/blog/membuat-cerita-indah-di-pantai.png",
+    externalLink: "https://pendopotour.com/pantai-indrayanti/",
+    internalLinks: [
+      { text: "sewa mobil", href: "/sewa-mobil" },
+      { text: "paket wisata", href: "/paket-wisata" },
+    ],
+  },
+  {
+    title: "Jurang Kanigoro: Kehidupan diatas awan",
+    author: "admin_pendopotour",
+    date: "July 28, 2025",
+    excerpt:
+      "Apa Itu Jurang Kanigoro? Jurang Kanigoro, yang lebih dikenal dengan nama Jurang Tembelan, adalah destinasi wisata alam berupa jurang dan tebing indah yang terletak di...",
+    image: "/blog/jurang.png",
+    externalLink:
+      "https://pendopotour.com/jurang-kanigoro-kekidupan-diatas-awan/",
+    internalLinks: [
+      { text: "paket wisata", href: "/paket-wisata" },
+      { text: "tentang kami", href: "/about" },
+    ],
+  },
+  {
+    title: "Air alam Sungai Mudal",
+    author: "admin_pendopotour",
+    date: "July 28, 2025",
+    excerpt:
+      "Sungai Mudal adalah sebuah destinasi ekowisata yang terletak di Dusun Banyunganti, Desa Jatimulyo, Kecamatan Girimulyo, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta. Sungai ini terkenal dengan...",
+    image: "/blog/air-alam-sungai-mudal.png",
+    externalLink: "https://pendopotour.com/sungai-mudal/",
+    internalLinks: [
+      { text: "sewa mobil", href: "/sewa-mobil" },
+      { text: "FAQ", href: "/faq" },
+    ],
+  },
+];
 
 const Home = () => {
   const featuredPackages = oneDayPackages.filter((p) => p.featured);
@@ -22,7 +66,7 @@ const Home = () => {
   const whatsappNumber = "6281378641157";
 
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-white text-gray-800 overflow-x-hidden min-h-screen">
       <Header />
 
       {/* Hero Section */}
@@ -32,17 +76,12 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-red-900/20 to-transparent z-10"></div>
 
         <img
-          src="https://images.unsplash.com/photo-1593719592254-69d2357c145e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Candi Prambanan at sunset"
+          src="/hero-section-home.svg"
+          alt="Hero Section Home"
           className="absolute inset-0 w-full h-full object-cover scale-105"
         />
 
-        {/* Floating elements for visual interest */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-red-500/20 rounded-full blur-xl animate-float"></div>
-        <div
-          className="absolute bottom-32 right-16 w-32 h-32 bg-orange-400/15 rounded-full blur-2xl animate-float"
-          style={{ animationDelay: "2s" }}
-        ></div>
+
 
         <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center text-center md:text-left">
           <div className="animate-slide-in-up">
@@ -115,7 +154,11 @@ const Home = () => {
                 className="hover-lift animate-slide-in-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <PackageCard pkg={pkg} whatsappNumber={whatsappNumber} />
+                <PackageCard
+                  pkg={pkg}
+                  whatsappNumber={whatsappNumber}
+                  hidePrice={pkg.hidePrice}
+                />
               </div>
             ))}
           </div>
@@ -411,10 +454,115 @@ const Home = () => {
       {/* Testimonials */}
       <Testimonials />
 
-      {/* Travel Blog */}
-      <TravelBlog />
 
-      {/* Popular Destinations */}
+
+      {/* Blog Section */}
+      <section className="py-20 md:py-28 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
+              Travel Blog & Inspirasi
+            </h2>
+            <p
+              className="text-xl text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed animate-fade-in"
+              style={{ animationDelay: "0.2s" }}
+            >
+              Temukan cerita perjalanan, tips wisata, dan inspirasi destinasi
+              menarik di Yogyakarta.
+            </p>
+            <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto mt-6 rounded-full animate-shimmer"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogPosts.map((post, index) => (
+              <Card
+                key={index}
+                className="overflow-hidden hover:shadow-lg transition-all hover:-translate-y-2 cursor-pointer group"
+              >
+                <div className="aspect-video overflow-hidden relative">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a
+                      href={post.externalLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-white/90 backdrop-blur-sm p-2 rounded-full hover:bg-white transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <ExternalLink className="w-4 h-4 text-gray-700" />
+                    </a>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-red-600 transition-colors">
+                    {post.title}
+                  </h3>
+                  <div className="flex items-center gap-4 mb-3 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-1">
+                      <User className="w-4 h-4" />
+                      {post.author}
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Calendar className="w-4 h-4" />
+                      {post.date}
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    {post.excerpt}
+                  </p>
+
+                  {/* Internal Links */}
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {post.internalLinks.map((link, linkIndex) => (
+                      <a
+                        key={linkIndex}
+                        href={link.href}
+                        className="text-red-600 hover:text-red-700 text-sm font-medium underline"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        {link.text} →
+                      </a>
+                    ))}
+                  </div>
+
+                  {/* External Link Button */}
+                  <a
+                    href={post.externalLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium group-hover:translate-x-1 transition-transform"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Baca Selengkapnya
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </a>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div
+            className="text-center mt-16 animate-fade-in"
+            style={{ animationDelay: "0.8s" }}
+          >
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="btn-secondary hover-lift"
+            >
+              <Link to="/blog" className="flex items-center gap-2">
+                <span>Lihat Semua Artikel</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
       <section className="py-20 md:py-28 bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
@@ -432,14 +580,14 @@ const Home = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <a
-              href="https://id.wikipedia.org/wiki/Candi_Borobudur"
+              href="https://id.wikipedia.org/wiki/Borobudur"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift overflow-hidden"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="/home/borobudur.webp"
                   alt="Candi Borobudur"
                   className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
                 />
@@ -458,7 +606,7 @@ const Home = () => {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1593719592254-69d2357c145e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="/home/prambanan.webp"
                   alt="Candi Prambanan"
                   className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
                 />
@@ -472,14 +620,14 @@ const Home = () => {
               </div>
             </a>
             <a
-              href="https://id.wikipedia.org/wiki/Pantai_Parangtritis"
+              href="https://id.wikipedia.org/wiki/Parangtritis,_Kretek,_Bantul"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift overflow-hidden"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+                  src="home/parangtritis.webp"
                   alt="Pantai Parangtritis"
                   className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
                 />
@@ -498,7 +646,7 @@ const Home = () => {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="/home/merapi.webp"
                   alt="Gunung Merapi"
                   className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
                 />
@@ -614,16 +762,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Floating WhatsApp Button */}
-      <a
-        href={`https://wa.me/${whatsappNumber}?text=Halo, saya ingin informasi rental mobil di Jogja`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="floating-whatsapp"
-        aria-label="Hubungi via WhatsApp"
-      >
-        <MessageCircle className="w-7 h-7 text-white" />
-      </a>
+
 
       <Footer />
     </div>

@@ -7,18 +7,31 @@ import {
   Star,
   Crown,
   Heart,
+  Car,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Advantages = () => {
   const advantages = [
     {
       icon: Award,
-      title: "Kualitas Layanan",
+      title: "Berpengalaman",
       description:
-        "Dedikasi Kami untuk memberikan kualitas dan pelayanan yang terbaik",
-      gradient: "from-yellow-500 via-orange-500 to-red-500",
+        "Tim profesional dan driver kami memiliki pengalaman bertahun-tahun di industri pariwisata Jogja dengan rating kepuasan pelanggan 4.8/5.",
+      gradient: "from-purple-500 via-indigo-500 to-blue-500",
       delay: "0s",
-      features: ["24/7 Support", "Expert Team", "Quality Assurance"],
+      features: ["10+ Years Experience", "4.8/5 Rating", "Professional Team"],
+      link: "/berpengalaman",
+    },
+    {
+      icon: Car,
+      title: "Armada Terbaik",
+      description:
+        "Kami menyediakan mobil-mobil keluaran terbaru yang bersih, terawat, dan selalu dalam kondisi prima dengan AC yang dingin dan nyaman.",
+      gradient: "from-orange-500 via-red-500 to-pink-500",
+      delay: "0.2s",
+      features: ["Latest Models", "Well Maintained", "Premium Comfort"],
+      link: "/armada-terbaik",
     },
     {
       icon: DollarSign,
@@ -26,8 +39,9 @@ const Advantages = () => {
       description:
         "Kami siap memberikan solusi terbaik untuk kebutuhan perjalanan Kamu sesuai dengan budget yang Kamu miliki",
       gradient: "from-green-500 via-emerald-500 to-teal-500",
-      delay: "0.2s",
+      delay: "0.4s",
       features: ["Best Value", "Transparent Pricing", "No Hidden Costs"],
+      link: "/harga-kompetitif",
     },
     {
       icon: Shield,
@@ -35,17 +49,9 @@ const Advantages = () => {
       description:
         "Sudah berbadan hukum dan dipercaya melayani berbagai instansi, dan perusahaan",
       gradient: "from-blue-500 via-indigo-500 to-purple-500",
-      delay: "0.4s",
-      features: ["Licensed Company", "Verified Reviews", "Trusted Partner"],
-    },
-    {
-      icon: CheckCircle,
-      title: "Terjamin",
-      description:
-        "Kendaraan yang kami miliki sangat memadai demi menjamin keamanan dan kenyamanan Kamu selama di perjalanan",
-      gradient: "from-red-500 via-pink-500 to-rose-500",
       delay: "0.6s",
-      features: ["Safety First", "Well Maintained", "Comfort Guaranteed"],
+      features: ["Licensed Company", "Verified Reviews", "Trusted Partner"],
+      link: "/terpercaya",
     },
   ];
 
@@ -85,66 +91,67 @@ const Advantages = () => {
           {advantages.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div
-                key={index}
-                className="glass-card p-6 md:p-8 lg:p-10 text-center group hover:-translate-y-4 transition-all duration-700 cursor-pointer animate-scale-in hover:scale-105 hover:rotate-1"
-                style={{ animationDelay: item.delay }}
-              >
-                {/* Floating Badge */}
-                <div className="absolute -top-3 -right-3 bg-gradient-to-r from-red-500 to-red-600 rounded-full p-2 shadow-lg animate-bounce-in group-hover:animate-pulse-glow">
-                  <Star className="w-4 h-4 text-white" />
-                </div>
-
-                {/* Icon Container */}
-                <div className="relative mb-4 md:mb-6">
-                  <div
-                    className={`inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-2xl bg-gradient-to-br ${item.gradient} shadow-xl group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 animate-float`}
-                  >
-                    <Icon className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-white animate-pulse" />
+              <Link key={index} to={item.link} className="block">
+                <div
+                  className="glass-card p-6 md:p-8 lg:p-10 text-center group hover:-translate-y-4 transition-all duration-700 cursor-pointer animate-scale-in hover:scale-105 hover:rotate-1"
+                  style={{ animationDelay: item.delay }}
+                >
+                  {/* Floating Badge */}
+                  <div className="absolute -top-3 -right-3 bg-gradient-to-r from-red-500 to-red-600 rounded-full p-2 shadow-lg animate-bounce-in group-hover:animate-pulse-glow">
+                    <Star className="w-4 h-4 text-white" />
                   </div>
-                  {/* Glow Effect */}
+
+                  {/* Icon Container */}
+                  <div className="relative mb-4 md:mb-6">
+                    <div
+                      className={`inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-2xl bg-gradient-to-br ${item.gradient} shadow-xl group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 animate-float`}
+                    >
+                      <Icon className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-white animate-pulse" />
+                    </div>
+                    {/* Glow Effect */}
+                    <div
+                      className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 animate-glow`}
+                    ></div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="space-y-3 md:space-y-4">
+                    <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 group-hover:text-red-600 transition-colors duration-300">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs md:text-sm lg:text-base text-muted-foreground leading-relaxed">
+                      {item.description}
+                    </p>
+
+                    {/* Features List */}
+                    <div className="flex flex-wrap gap-1 md:gap-2 justify-center mt-3 md:mt-4">
+                      {item.features.map((feature, idx) => (
+                        <span
+                          key={idx}
+                          className="px-2 md:px-3 py-1 bg-gradient-to-r from-red-50 to-red-100 text-red-600 rounded-full text-xs font-medium border border-red-200 hover:bg-red-100 transition-colors duration-300 animate-fade-in"
+                          style={{
+                            animationDelay: `${
+                              parseFloat(item.delay) + 0.1 * (idx + 1)
+                            }s`,
+                          }}
+                        >
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-red-600/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
+                  {/* Decorative Elements */}
+                  <div className="absolute top-4 left-4 w-2 h-2 bg-red-400 rounded-full opacity-20 animate-pulse"></div>
                   <div
-                    className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 animate-glow`}
+                    className="absolute bottom-4 right-4 w-3 h-3 bg-red-300 rounded-full opacity-30 animate-pulse"
+                    style={{ animationDelay: "1s" }}
                   ></div>
                 </div>
-
-                {/* Content */}
-                <div className="space-y-3 md:space-y-4">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 group-hover:text-red-600 transition-colors duration-300">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs md:text-sm lg:text-base text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-
-                  {/* Features List */}
-                  <div className="flex flex-wrap gap-1 md:gap-2 justify-center mt-3 md:mt-4">
-                    {item.features.map((feature, idx) => (
-                      <span
-                        key={idx}
-                        className="px-2 md:px-3 py-1 bg-gradient-to-r from-red-50 to-red-100 text-red-600 rounded-full text-xs font-medium border border-red-200 hover:bg-red-100 transition-colors duration-300 animate-fade-in"
-                        style={{
-                          animationDelay: `${
-                            parseFloat(item.delay) + 0.1 * (idx + 1)
-                          }s`,
-                        }}
-                      >
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-red-600/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-
-                {/* Decorative Elements */}
-                <div className="absolute top-4 left-4 w-2 h-2 bg-red-400 rounded-full opacity-20 animate-pulse"></div>
-                <div
-                  className="absolute bottom-4 right-4 w-3 h-3 bg-red-300 rounded-full opacity-30 animate-pulse"
-                  style={{ animationDelay: "1s" }}
-                ></div>
-              </div>
+              </Link>
             );
           })}
         </div>

@@ -13,7 +13,6 @@ import {
   ExternalLink,
   ArrowRight,
 } from "lucide-react";
-import Team from "@/components/Team";
 
 const About = () => {
   // Structured data for SEO
@@ -31,10 +30,10 @@ const About = () => {
       foundingDate: "2016",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Jl. Perumnas, Dabag, Condongcatur",
-        addressLocality: "Depok",
-        addressRegion: "Sleman",
-        postalCode: "55281",
+        streetAddress: "Jl. Merpati No.rt 01, modalan, Banguntapan",
+        addressLocality: "Banguntapan",
+        addressRegion: "Bantul",
+        postalCode: "55198",
         addressCountry: "ID",
       },
     },
@@ -119,6 +118,9 @@ const About = () => {
               Pendopo Trans Nusantara bergerak dalam jasa perjalanan wisata
               serta penyedia transportasi yang berlokasi di Yogyakarta sejak
               2016.
+            </p>
+            <p className="text-lg text-muted-foreground mb-6">
+              Jl. Merpati No.rt 01, modalan, Banguntapan, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55198
             </p>
             <p className="text-lg text-muted-foreground mb-6">
               Kami siap membantu semua kebutuhan Kamu sesuai dengan budget yang
@@ -341,8 +343,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      <Team />
 
       {/* Legalitas Section */}
       <section className="py-16 bg-secondary">

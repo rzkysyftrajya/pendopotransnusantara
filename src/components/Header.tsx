@@ -63,7 +63,7 @@ const Header = () => {
               className="bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:from-red-600 hover:via-red-700 hover:to-red-800 text-white font-bold py-3 px-6 rounded-xl shadow-xl hover:shadow-red-500/50 transition-all duration-500 transform hover:scale-105 hover:-rotate-1 animate-pulse-glow"
             >
               <a
-                href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20mobil"
+                href="https://wa.me/6285640644321?text=Halo%20Pendopo%20Rentcar%2C%20saya%20ingin%20memesan%20sewa%20mobil."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -130,14 +130,18 @@ const Header = () => {
                     </p>
                     <div className="flex flex-col gap-3">
                       <a
-                        href="tel:081378641157"
+                        href="https://wa.me/6281378641157?text=Halo%20Pendopo%20Rentcar%2C%20saya%20ingin%20memesan%20paket%20tour."
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 text-lg font-medium text-gray-700 hover:text-red-600 bg-white/50 rounded-xl py-3 px-4 backdrop-blur-sm transition-all duration-300 hover:scale-105"
                       >
                         <Phone className="w-5 h-5 text-red-500" />
                         <span>081378641157</span>
                       </a>
                       <a
-                        href="tel:085640644321"
+                        href="https://wa.me/6285640644321?text=Halo%20Pendopo%20Rentcar%2C%20saya%20ingin%20memesan%20sewa%20mobil."
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 text-lg font-medium text-gray-700 hover:text-red-600 bg-white/50 rounded-xl py-3 px-4 backdrop-blur-sm transition-all duration-300 hover:scale-105"
                       >
                         <Phone className="w-5 h-5 text-red-500" />
@@ -149,7 +153,7 @@ const Header = () => {
                       className="w-full bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:from-red-600 hover:via-red-700 hover:to-red-800 text-white font-bold py-4 rounded-xl shadow-xl hover:shadow-red-500/50 transition-all duration-500 animate-bounce-in mt-4"
                     >
                       <a
-                        href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20mobil"
+                        href="https://wa.me/6285640644321?text=Halo%20Pendopo%20Rentcar%2C%20saya%20ingin%20memesan%20sewa%20mobil."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2"

@@ -9,8 +9,7 @@ export const cars = [
     capacity: 6,
     transmission: "Matic / Manual",
     notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
-    image:
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/armada/avanza.webp",
   },
   {
     name: "New Avanza",
@@ -22,8 +21,7 @@ export const cars = [
     capacity: 6,
     transmission: "Matic / Manual",
     notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
-    image:
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/armada/new-avanza.webp",
   },
   {
     name: "Innova Reborn",
@@ -35,8 +33,7 @@ export const cars = [
     capacity: 6,
     transmission: "Matic / Manual",
     notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
-    image:
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/armada/innova-reborn.webp",
   },
   {
     name: "Innova Venturer",
@@ -48,8 +45,7 @@ export const cars = [
     capacity: 6,
     transmission: "Matic / Manual",
     notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
-    image:
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/armada/venturer.webp",
   },
   {
     name: "Innova Zenix G",
@@ -61,8 +57,7 @@ export const cars = [
     capacity: 6,
     transmission: "Matic",
     notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
-    image:
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/armada/innova-zenix-g.webp",
   },
   {
     name: "Innova Zenix Q",
@@ -74,8 +69,7 @@ export const cars = [
     capacity: 5,
     transmission: "Matic",
     notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
-    image:
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/armada/innova-zenix-q.webp",
   },
   {
     name: "Hiace Luxury",
@@ -87,8 +81,7 @@ export const cars = [
     capacity: 8,
     transmission: "Matic",
     notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
-    image:
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/armada/hiace-luxury.webp",
   },
   {
     name: "Alphard Facelift",
@@ -100,8 +93,7 @@ export const cars = [
     capacity: 5,
     transmission: "Matic",
     notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
-    image:
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/armada/alphard-facelift.webp",
   },
   {
     name: "Bis Bus",
@@ -114,8 +106,7 @@ export const cars = [
     transmission: "",
     notes:
       "Harga Sewa Tidak Termasuk Fee Crew, Tol, Parkir, Tiket Masuk Tempat Wisata",
-    image:
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/armada/bis-bus.webp",
   },
   {
     name: "Alphard Hybrid",
@@ -127,7 +118,79 @@ export const cars = [
     capacity: 5,
     transmission: "Matic",
     notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
-    image:
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/armada/alphard-hybrid.webp",
+  },
+  {
+    name: "Hiace Premio",
+    price: 1500000,
+    description: "Mobil Dengan Supir + Bensin Rp. 1.500.000 / Day",
+    duration: "15 Jam",
+    maxTime: "22.30",
+    overtime: "10% Dari Tarif Per Jam",
+    capacity: 14,
+    transmission: "Matic / Manual",
+    notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
+    image: "/armada/hiace-luxury.webp",
+  },
+  {
+    name: "Pajero",
+    price: 1500000,
+    description: "Mobil Dengan Supir + Bensin Rp. 1.500.000 / Day",
+    duration: "15 Jam",
+    maxTime: "22.30",
+    overtime: "10% Dari Tarif Per Jam",
+    capacity: 6,
+    transmission: "Matic / Manual",
+    notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
+    image: "/armada/pajero.webp",
+  },
+  {
+    name: "Fortuner",
+    price: 1500000,
+    description: "Mobil Dengan Supir + Bensin Rp. 1.500.000 / Day",
+    duration: "15 Jam",
+    maxTime: "22.30",
+    overtime: "10% Dari Tarif Per Jam",
+    capacity: 6,
+    transmission: "Matic / Manual",
+    notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
+    image: "/armada/fortuner.webp",
+  },
+  {
+    name: "Alphard Transformers",
+    price: 2500000,
+    description: "Mobil Dengan Supir + Bensin Rp. 2.500.000 / Day",
+    duration: "15 Jam",
+    maxTime: "22.30",
+    overtime: "10% Dari Tarif Per Jam",
+    capacity: 5,
+    transmission: "Matic / Manual",
+    notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
+    image: "/armada/alphard-transformer.webp",
+  },
+  {
+    name: "Bus 35 Seat",
+    price: 2500000,
+    description: "Mobil Dengan Supir + Bensin Rp. 2.500.000 / Day",
+    duration: "15 Jam",
+    maxTime: "22.30",
+    overtime: "10% Dari Tarif Per Jam",
+    capacity: 35,
+    transmission: "Matic / Manual",
+    notes:
+      "Harga Sewa Tidak Termasuk Fee Crew, Parkir, Tol, Tiket Masuk Tempat Wisata",
+    image: "/armada/bis-bus.webp",
+  },
+  {
+    name: "Hiace Commuter",
+    price: 1200000,
+    description: "Mobil Dengan Supir + Bensin Rp. 1.200.000 / Day",
+    duration: "15 Jam",
+    maxTime: "22.30",
+    overtime: "10% Dari Tarif Per Jam",
+    capacity: 16,
+    transmission: "Matic / Manual",
+    notes: "Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat Wisata",
+    image: "/armada/hiace-commuter.webp",
   },
 ];

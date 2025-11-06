@@ -10,9 +10,9 @@ import {
   Zap,
 } from "lucide-react";
 
-const innovaImage = "https://placehold.co/600x400/transparent/F00";
-const alphardImage = "https://placehold.co/600x400/transparent/F00";
-const hiaceImage = "https://placehold.co/600x400/transparent/F00";
+const innovaImage = "/armada/innova-zenix-g.webp";
+const alphardImage = "/armada/alphard-facelift.webp";
+const hiaceImage = "/armada/hiace-luxury.webp";
 
 const CarList = () => {
   const whatsappNumber = "6281234567890";
@@ -207,7 +207,7 @@ const CarList = () => {
           {cars.map((car, index) => (
             <Card
               key={index}
-              className="glass-card overflow-hidden hover:shadow-2xl transition-all duration-700 group cursor-pointer animate-scale-in hover:scale-105 hover:-rotate-1"
+              className="glass-card overflow-hidden hover:shadow-2xl transition-all duration-700 group cursor-pointer animate-scale-in min-h-[500px] flex flex-col max-w-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Badge */}
@@ -226,11 +226,11 @@ const CarList = () => {
               </div>
 
               {/* Image Container */}
-              <div className="aspect-video overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 relative">
+              <div className="overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 relative max-h-48 flex items-center justify-center">
                 <img
                   src={car.image}
                   alt={car.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="max-w-full max-h-full object-contain transition-transform duration-700"
                 />
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

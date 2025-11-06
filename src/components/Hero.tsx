@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 
-const heroImage = "https://placehold.co/600x400/transparent/F00";
+const heroImage = "/hero-section-home.svg";
 
 const Hero = () => {
   const whatsappNumber = "6281234567890";

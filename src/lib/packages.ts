@@ -1,10 +1,10 @@
-
 export const oneDayPackages = [
   {
     name: "Paket Merapi",
     duration: "1 Hari",
     location: "Yogyakarta",
-    short_description: "Jelajahi kegagahan Gunung Merapi dan keindahan sekitarnya dalam satu hari.",
+    short_description:
+      "Jelajahi kegagahan Gunung Merapi dan keindahan sekitarnya dalam satu hari.",
     destinations: [
       "Pasar Ngasem",
       "Tamansari",
@@ -20,14 +20,14 @@ export const oneDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "308.000",
-    image: "https://images.unsplash.com/photo-1593719592254-69d2357c145e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    featured: true,
+    image: "/paket-wisata/paket-merapi.webp",
   },
   {
     name: "Paket Patehan",
     duration: "1 Hari",
     location: "Yogyakarta",
-    short_description: "Nikmati suasana sejuk hutan pinus dan spot foto unik di Puncak Becici.",
+    short_description:
+      "Nikmati suasana sejuk hutan pinus dan spot foto unik di Puncak Becici.",
     destinations: [
       "Pasar Ngasem",
       "Taman Sari",
@@ -43,14 +43,16 @@ export const oneDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "218.000",
-    image: "https://images.unsplash.com/photo-1559126137-3485b7427625?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-patehan.webp",
     featured: true,
+    hidePrice: true,
   },
   {
     name: "Paket Bantul",
     duration: "1 Hari",
     location: "Yogyakarta",
-    short_description: "Jelajahi pesona alam selatan Jogja, dari kebun buah hingga pantai eksotis.",
+    short_description:
+      "Jelajahi pesona alam selatan Jogja, dari kebun buah hingga pantai eksotis.",
     destinations: [
       "Kebun Buah Mangunan",
       "Hutan Pinus Mangunan",
@@ -66,14 +68,16 @@ export const oneDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "239.000",
-    image: "https://images.unsplash.com/photo-1570162872928-08f6756a402c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-bantul.webp",
     featured: true,
+    hidePrice: true,
   },
   {
     name: "Paket Borobudur",
     duration: "1 Hari",
     location: "Yogyakarta",
-    short_description: "Saksikan kemegahan Candi Borobudur dan nikmati petualangan VW Safari.",
+    short_description:
+      "Saksikan kemegahan Candi Borobudur dan nikmati petualangan VW Safari.",
     destinations: [
       "Candi Borobudur",
       "VW Safari",
@@ -89,13 +93,14 @@ export const oneDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "349.000",
-    image: "https://images.unsplash.com/photo-1593719592254-69d2357c145e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-borobudur.webp",
   },
   {
     name: "Paket Prambanan",
     duration: "1 Hari",
     location: "Yogyakarta",
-    short_description: "Kunjungi Candi Prambanan yang megah dan nikmati pemandangan dari Obelix Hills.",
+    short_description:
+      "Kunjungi Candi Prambanan yang megah dan nikmati pemandangan dari Obelix Hills.",
     destinations: [
       "Tebing Breksi",
       "Obelix Hills",
@@ -111,13 +116,14 @@ export const oneDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "247.000",
-    image: "https://images.unsplash.com/photo-1559126137-3485b7427625?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-prambanan.webp",
   },
   {
     name: "Paket Imogiri",
     duration: "1 Hari",
     location: "Yogyakarta",
-    short_description: "Rasakan suasana magis Imogiri dan keindahan senja di Pantai Parangtritis.",
+    short_description:
+      "Rasakan suasana magis Imogiri dan keindahan senja di Pantai Parangtritis.",
     destinations: [
       "Taman Sari",
       "Hutan Pinus",
@@ -133,13 +139,14 @@ export const oneDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "228.000",
-    image: "https://images.unsplash.com/photo-1570162872928-08f6756a402c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-imogiri.webp",
   },
   {
     name: "Paket Gunung Kidul",
     duration: "1 Hari",
     location: "Yogyakarta",
-    short_description: "Petualangan seru di Goa Pindul dan menikmati keindahan pantai-pantai Gunung Kidul.",
+    short_description:
+      "Petualangan seru di Goa Pindul dan menikmati keindahan pantai-pantai Gunung Kidul.",
     destinations: [
       "Cave Tubing Goa Pindul",
       "Puncak Segoro",
@@ -155,13 +162,14 @@ export const oneDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "258.000",
-    image: "https://images.unsplash.com/photo-1593719592254-69d2357c145e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-gunung-kidul.webp",
   },
   {
     name: "Paket Kulon Progo",
     duration: "1 Hari",
     location: "Yogyakarta",
-    short_description: "Menikmati keindahan alam Kulon Progo dari Tumpeng Menoreh hingga air terjun.",
+    short_description:
+      "Menikmati keindahan alam Kulon Progo dari Tumpeng Menoreh hingga air terjun.",
     destinations: [
       "Tumpeng Menoreh",
       "Candi Borobudur",
@@ -177,7 +185,7 @@ export const oneDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "288.000",
-    image: "https://images.unsplash.com/photo-1559126137-3485b7427625?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-kulon-progo.webp",
   },
 ];
 
@@ -186,7 +194,8 @@ export const twoDayPackages = [
     name: "Paket Sewon",
     duration: "2 Hari 1 Malam",
     location: "Yogyakarta",
-    short_description: "Kombinasi wisata budaya, alam, dan pemandangan laut yang menakjubkan.",
+    short_description:
+      "Kombinasi wisata budaya, alam, dan pemandangan laut yang menakjubkan.",
     destinations: [
       "Pasar Ngasem",
       "Tamansari",
@@ -206,13 +215,14 @@ export const twoDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "747.000",
-    image: "https://images.unsplash.com/photo-1570162872928-08f6756a402c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-sewon.webp",
   },
   {
     name: "Paket Gondomanan",
     duration: "2 Hari 1 Malam",
     location: "Yogyakarta",
-    short_description: "Jelajahi kebun binatang, spot foto unik, dan wisata budaya dalam 2 hari.",
+    short_description:
+      "Jelajahi kebun binatang, spot foto unik, dan wisata budaya dalam 2 hari.",
     destinations: [
       "Suraloka Zoo",
       "Bhumi Merapi",
@@ -231,13 +241,14 @@ export const twoDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "759.000",
-    image: "https://images.unsplash.com/photo-1593719592254-69d2357c145e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-gondomanan.webp",
   },
   {
     name: "Paket Wonosari",
     duration: "2 Hari 1 Malam",
     location: "Yogyakarta",
-    short_description: "Nikmati keindahan pantai-pantai eksotis Wonosari dan spot senja terbaik.",
+    short_description:
+      "Nikmati keindahan pantai-pantai eksotis Wonosari dan spot senja terbaik.",
     destinations: [
       "Heha Ocean View",
       "Pantai Watulawang",
@@ -257,13 +268,14 @@ export const twoDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "709.000",
-    image: "https://images.unsplash.com/photo-1559126137-3485b7427625?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-wonosari.webp",
   },
   {
     name: "Paket Krapyak",
     duration: "2 Hari 1 Malam",
     location: "Yogyakarta",
-    short_description: "Petualangan 2 hari menjelajahi pantai-pantai indah dan pemandangan dari ketinggian.",
+    short_description:
+      "Petualangan 2 hari menjelajahi pantai-pantai indah dan pemandangan dari ketinggian.",
     destinations: [
       "Pantai Mesra",
       "Pantai Ngobaran",
@@ -282,13 +294,14 @@ export const twoDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "778.000",
-    image: "https://images.unsplash.com/photo-1570162872928-08f6756a402c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-krapyak.webp",
   },
   {
     name: "Paket Kotagede",
     duration: "2 Hari 1 Malam",
     location: "Yogyakarta",
-    short_description: "Eksplorasi lengkap dari alam, pantai, hingga spot foto instagramable di Jogja.",
+    short_description:
+      "Eksplorasi lengkap dari alam, pantai, hingga spot foto instagramable di Jogja.",
     destinations: [
       "Kebun Buah Mangunan",
       "Hutan Pinus",
@@ -311,13 +324,14 @@ export const twoDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "747.000",
-    image: "https://images.unsplash.com/photo-1593719592254-69d2357c145e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-kotagede.webp",
   },
   {
     name: "Paket Gamping",
     duration: "2 Hari 1 Malam",
     location: "Yogyakarta",
-    short_description: "Dari wisata sejarah Borobudur hingga pemandangan modern di Obelix Hills.",
+    short_description:
+      "Dari wisata sejarah Borobudur hingga pemandangan modern di Obelix Hills.",
     destinations: [
       "Taman Sari",
       "Kopi Klothok",
@@ -338,13 +352,14 @@ export const twoDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "879.000",
-    image: "https://images.unsplash.com/photo-1559126137-3485b7427625?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-gamping.webp",
   },
   {
     name: "Paket Gedongtengen",
     duration: "2 Hari 1 Malam",
     location: "Yogyakarta",
-    short_description: "Kombinasi sempurna antara wisata alam, kuliner, dan spot foto kekinian.",
+    short_description:
+      "Kombinasi sempurna antara wisata alam, kuliner, dan spot foto kekinian.",
     destinations: [
       "Tumpeng Menoreh",
       "Studio Gamplong",
@@ -364,13 +379,14 @@ export const twoDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "829.000",
-    image: "https://images.unsplash.com/photo-1570162872928-08f6756a402c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-gedotengen.webp",
   },
   {
     name: "Paket Pundong",
     duration: "2 Hari 1 Malam",
     location: "Yogyakarta",
-    short_description: "Petualangan lengkap dari Candi Borobudur, Lava Tour Merapi, hingga Goa Pindul.",
+    short_description:
+      "Petualangan lengkap dari Candi Borobudur, Lava Tour Merapi, hingga Goa Pindul.",
     destinations: [
       "Borobudur",
       "Air Terjun Kedung Kayang",
@@ -390,13 +406,14 @@ export const twoDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "877.000",
-    image: "https://images.unsplash.com/photo-1593719592254-69d2357c145e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-pundong.webp",
   },
   {
     name: "Paket Mantrijeron",
     duration: "2 Hari 1 Malam",
     location: "Yogyakarta",
-    short_description: "Jelajahi pusat kota Jogja, nikmati kuliner, dan temukan spot foto terbaik.",
+    short_description:
+      "Jelajahi pusat kota Jogja, nikmati kuliner, dan temukan spot foto terbaik.",
     destinations: [
       "Pasar Ngasem",
       "Keraton",
@@ -417,7 +434,7 @@ export const twoDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "699.000",
-    image: "https://images.unsplash.com/photo-1559126137-3485b7427625?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-mantrijero.webp",
   },
 ];
 
@@ -426,7 +443,8 @@ export const threeDayPackages = [
     name: "Jogokaryan",
     duration: "3 Hari 2 Malam",
     location: "Yogyakarta",
-    short_description: "Eksplorasi Jogja super lengkap dari wisata alam, budaya, sejarah, hingga kuliner.",
+    short_description:
+      "Eksplorasi Jogja super lengkap dari wisata alam, budaya, sejarah, hingga kuliner.",
     destinations: [
       "Kopi Klothok",
       "Museum Merapi",
@@ -450,13 +468,14 @@ export const threeDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "1.027.000",
-    image: "https://images.unsplash.com/photo-1570162872928-08f6756a402c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-jogokarya.webp",
   },
   {
     name: "Mangkuyudan",
     duration: "3 Hari 2 Malam",
     location: "Yogyakarta",
-    short_description: "Petualangan 3 hari menyusuri pantai, alam, dan spot-spot foto paling hits di Jogja.",
+    short_description:
+      "Petualangan 3 hari menyusuri pantai, alam, dan spot-spot foto paling hits di Jogja.",
     destinations: [
       "Cave Tubing Goa Pindul",
       "Pantai Drini",
@@ -480,13 +499,14 @@ export const threeDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "1.125.000",
-    image: "https://images.unsplash.com/photo-1593719592254-69d2357c145e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-mangkuyudan.webp",
   },
   {
     name: "Kaliurang",
     duration: "3 Hari 2 Malam",
     location: "Yogyakarta",
-    short_description: "Nikmati sunrise, jelajahi candi, dan rasakan suasana romantis di berbagai destinasi.",
+    short_description:
+      "Nikmati sunrise, jelajahi candi, dan rasakan suasana romantis di berbagai destinasi.",
     destinations: [
       "Candi Prambanan",
       "Tebing Breksi",
@@ -510,13 +530,14 @@ export const threeDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "1.125.000",
-    image: "https://images.unsplash.com/photo-1559126137-3485b7427625?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-kaliurang.webp",
   },
   {
     name: "Danurejan",
     duration: "3 Hari 2 Malam",
     location: "Yogyakarta",
-    short_description: "Paket terlengkap untuk merasakan semua pesona Jogja, dari gunung hingga pantai.",
+    short_description:
+      "Paket terlengkap untuk merasakan semua pesona Jogja, dari gunung hingga pantai.",
     destinations: [
       "Kopi klothok",
       "Lava tour Merapi",
@@ -540,7 +561,7 @@ export const threeDayPackages = [
     ],
     excludes: ["Makan", "Pengeluaran Pribadi"],
     price: "1.194.000",
-    image: "https://images.unsplash.com/photo-1570162872928-08f6756a402c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-danurejan.webp",
   },
 ];
 
@@ -549,7 +570,8 @@ export const companyPackages = [
     name: "Paket Adventure",
     duration: "2 Hari 1 Malam",
     location: "Yogyakarta",
-    short_description: "Dirancang khusus untuk kegiatan outing perusahaan dengan aktivitas outbound dan gala dinner.",
+    short_description:
+      "Dirancang khusus untuk kegiatan outing perusahaan dengan aktivitas outbound dan gala dinner.",
     destinations: [
       "Outbound",
       "Cave Tubing Goa Pindul",
@@ -570,6 +592,6 @@ export const companyPackages = [
     ],
     excludes: ["Pengeluaran Pribadi"],
     price: "1.677.000",
-    image: "https://images.unsplash.com/photo-1593719592254-69d2357c145e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/paket-wisata/paket-adventure.webp",
   },
 ];

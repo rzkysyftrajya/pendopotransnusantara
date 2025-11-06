@@ -71,7 +71,7 @@ const PaketWisata = () => {
         <section className="relative bg-gray-900 text-white py-16 md:py-24 lg:py-32">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/hero-section-paket-wisata.svg"
               alt="Landscape Yogyakarta"
               className="w-full h-full object-cover opacity-40"
             />

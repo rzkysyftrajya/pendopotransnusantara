@@ -26,6 +26,9 @@ const Footer = () => {
               penyedia layanan wisata dan sewa mobil di Yogyakarta dengan
               komitmen untuk memberikan pengalaman yang tak terlupakan.
             </p>
+            <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4 md:mb-6">
+              Jl. Merpati No.rt 01, modalan, Banguntapan, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55198
+            </p>
             <div className="flex items-center gap-3 md:gap-4">
               <div className="w-8 h-8 md:w-10 md:h-10 bg-red-600 rounded-full flex items-center justify-center">
                 <Instagram className="w-4 h-4 md:w-5 md:h-5" />
@@ -49,7 +52,9 @@ const Footer = () => {
                 <div>
                   <p className="text-xs md:text-sm text-gray-400">Paket Tour</p>
                   <a
-                    href="tel:081378641157"
+                    href="https://wa.me/6281378641157?text=Halo%20Pendopo%20Rentcar%2C%20saya%20ingin%20memesan%20paket%20tour."
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-sm md:text-base text-white hover:text-red-400 font-medium transition-colors duration-300"
                   >
                     081378641157
@@ -63,7 +68,9 @@ const Footer = () => {
                 <div>
                   <p className="text-xs md:text-sm text-gray-400">Sewa Mobil</p>
                   <a
-                    href="tel:085640644321"
+                    href="https://wa.me/6285640644321?text=Halo%20Pendopo%20Rentcar%2C%20saya%20ingin%20memesan%20sewa%20mobil."
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-sm md:text-base text-white hover:text-red-400 font-medium transition-colors duration-300"
                   >
                     085640644321
@@ -102,6 +109,14 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
+          </div>
+
+          {/* Google Map */}
+          <div className="md:col-span-1">
+            <h4 className="text-lg md:text-xl font-bold mb-4 md:mb-6 text-white">
+              Lokasi Kami
+            </h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.6942194204603!2d110.4061928750053!3d-7.822154092198635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57b25594025d%3A0x7424ecb4ad0e4914!2sPendopo%20Trans!5e0!3m2!1sid!2sid!4v1762387181480!5m2!1sid!2sid" width="400" height="300" style={{ border: "0" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 

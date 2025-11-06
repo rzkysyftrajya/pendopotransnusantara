@@ -12,9 +12,8 @@ const blogPosts = [
     date: "July 28, 2025",
     excerpt:
       "Apa Itu Pantai Indrayanti? Pantai Indrayanti adalah salah satu pantai populer di Gunungkidul, Yogyakarta, yang dikenal dengan keindahan pasir putih bersih dan panorama laut biru...",
-    image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
-    externalLink: "https://en.wikipedia.org/wiki/Indrayanti_Beach",
+    image: "/blog/membuat-cerita-indah-di-pantai.png",
+    externalLink: "https://pendopotour.com/pantai-indrayanti/",
     internalLinks: [
       { text: "sewa mobil", href: "/sewa-mobil" },
       { text: "paket wisata", href: "/paket-wisata" },
@@ -26,9 +25,9 @@ const blogPosts = [
     date: "July 28, 2025",
     excerpt:
       "Apa Itu Jurang Kanigoro? Jurang Kanigoro, yang lebih dikenal dengan nama Jurang Tembelan, adalah destinasi wisata alam berupa jurang dan tebing indah yang terletak di...",
-    image:
-      "https://images.unsplash.com/photo-1464822759844-d150f38d609c?w=800&q=80",
-    externalLink: "https://en.wikipedia.org/wiki/Kanigoro_Cliff",
+    image: "/blog/jurang.png",
+    externalLink:
+      "https://pendopotour.com/jurang-kanigoro-kekidupan-diatas-awan/",
     internalLinks: [
       { text: "paket wisata", href: "/paket-wisata" },
       { text: "tentang kami", href: "/about" },
@@ -40,9 +39,8 @@ const blogPosts = [
     date: "July 28, 2025",
     excerpt:
       "Sungai Mudal adalah sebuah destinasi ekowisata yang terletak di Dusun Banyunganti, Desa Jatimulyo, Kecamatan Girimulyo, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta. Sungai ini terkenal dengan...",
-    image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
-    externalLink: "https://id.wikipedia.org/wiki/Sungai_Mudal",
+    image: "/blog/air-alam-sungai-mudal.png",
+    externalLink: "https://pendopotour.com/sungai-mudal/",
     internalLinks: [
       { text: "sewa mobil", href: "/sewa-mobil" },
       { text: "FAQ", href: "/faq" },
@@ -54,9 +52,8 @@ const blogPosts = [
     date: "July 28, 2025",
     excerpt:
       "Gumuk Pasir Jogja, yang dikenal juga sebagai Gumuk Pasir Parangtritis atau Gumuk Pasir Parangkusumo, adalah fenomena alam berupa gundukan-gundukan pasir yang terbentuk secara alami akibat...",
-    image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
-    externalLink: "https://en.wikipedia.org/wiki/Gumuk_Pasir_Parangkusumo",
+    image: "/blog/gumuk-pasir.png",
+    externalLink: "https://pendopotour.com/gumuk-pasir/",
     internalLinks: [
       { text: "paket wisata", href: "/paket-wisata" },
       { text: "hubungi kami", href: "/contact" },
@@ -68,9 +65,8 @@ const blogPosts = [
     date: "July 28, 2025",
     excerpt:
       "Pantai Parangtritis adalah salah satu destinasi wisata pantai paling ikonik di Yogyakarta, terletak di Desa Parangtritis, Kecamatan Kretek, Kabupaten Bantul, sekitar 27 km dari pusat...",
-    image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
-    externalLink: "https://en.wikipedia.org/wiki/Parangtritis_Beach",
+    image: "/home/parangtritis.webp",
+    externalLink: "https://pendopotour.com/pantai-parangtritis/",
     internalLinks: [
       { text: "sewa mobil", href: "/sewa-mobil" },
       { text: "paket wisata", href: "/paket-wisata" },
@@ -83,9 +79,9 @@ const blogPosts = [
     date: "July 28, 2025",
     excerpt:
       "Suraloka Zoo adalah kebun binatang edukasi modern yang terletak di kawasan wisata Kaliurang, Sleman, Yogyakarta, tepatnya di Jalan Boyong No.97, Kaliurang, Hargobinangun, Pakem. Berdiri sejak...",
-    image:
-      "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
-    externalLink: "https://suralokazoo.com",
+    image: "/blog/suraloka-zoo.png",
+    externalLink:
+      "https://pendopotour.com/suraloka-zoo-kebun-binatang-interaktif-dan-edukatif-di-lereng-merapi/",
     internalLinks: [
       { text: "paket wisata", href: "/paket-wisata" },
       { text: "tentang kami", href: "/about" },
@@ -98,9 +94,9 @@ const blogPosts = [
     date: "July 28, 2025",
     excerpt:
       "Apa Itu Pule Payung? Pule Payung adalah destinasi wisata perbukitan di Kulon Progo, Yogyakarta, yang menawarkan pemandangan spektakuler Waduk Sermo dan perbukitan Menoreh dari ketinggian...",
-    image:
-      "https://images.unsplash.com/photo-1464822759844-d150f38d609c?w=800&q=80",
-    externalLink: "https://id.wikipedia.org/wiki/Pule_Payung",
+    image: "/blog/pule-payung.png",
+    externalLink:
+      "https://pendopotour.com/pule-payung-surga-spot-foto-dan-panorama-waduk-sermo-di-puncak-perbukitan-menoreh/",
     internalLinks: [
       { text: "sewa mobil", href: "/sewa-mobil" },
       { text: "hubungi kami", href: "/contact" },
@@ -112,8 +108,7 @@ const blogPosts = [
     date: "July 27, 2025",
     excerpt:
       "Tempo Gelato adalah kedai gelato atau es krim khas Italia yang berdiri sejak tahun 2015 di Yogyakarta. Tempat ini dikenal sebagai destinasi kuliner yang menawarkan...",
-    image:
-      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80",
+    image: "/blog/tempo-gelato.png",
     externalLink: "https://tempogelato.com",
     internalLinks: [
       { text: "paket wisata", href: "/paket-wisata" },
@@ -126,8 +121,7 @@ const blogPosts = [
     date: "July 27, 2025",
     excerpt:
       "Puncak Segoro adalah destinasi wisata alam yang memukau dan masih relatif tersembunyi di Gunungkidul, Yogyakarta. Terletak di puncak tebing batu kapur yang menjulang tinggi, tempat...",
-    image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    image: "/blog/puncak-segoro.png",
     externalLink: "https://id.wikipedia.org/wiki/Puncak_Segoro",
     internalLinks: [
       { text: "sewa mobil", href: "/sewa-mobil" },
@@ -141,8 +135,7 @@ const blogPosts = [
     date: "July 27, 2025",
     excerpt:
       "Pantai ngobaran yaitu Destinasi wisata alam yang terletak di pesisir selatan Gunungkidul, Yogyakarta. Pantai Ngobaran tepatnya berada di Desa Kanigoro, Kecamatan Saptosari. Pantai ini di...",
-    image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+    image: "/blog/pantai-ngobaran.png",
     externalLink: "https://en.wikipedia.org/wiki/Ngobaran_Beach",
     internalLinks: [
       { text: "paket wisata", href: "/paket-wisata" },
@@ -155,8 +148,7 @@ const blogPosts = [
     date: "July 27, 2025",
     excerpt:
       "Heha Ocean View merupakan destinasi wisata yang memukau di Gunungkidul, Yogyakarta. Menawarkan pemandangan laut selatan yang luas dan eksotis dari ketinggian tebing. Tempat ini sangat...",
-    image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    image: "/blog/heha-ocean-view.png",
     externalLink: "https://id.wikipedia.org/wiki/Heha_Ocean_View",
     internalLinks: [
       { text: "sewa mobil", href: "/sewa-mobil" },
@@ -169,8 +161,7 @@ const blogPosts = [
     date: "July 27, 2025",
     excerpt:
       "Jogja juga terkenal sebagai surga oleh-oleh yang memanjakan wisatawan. Di pusat oleh-oleh khas Jogja wisatawan akan menemukan beragam cenderamata otentik mulai dari batik klasik, kain...",
-    image:
-      "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&q=80",
+    image: "/blog/surga-oleh-oleh-joga.png",
     externalLink: "https://en.wikipedia.org/wiki/Malioboro",
     internalLinks: [
       { text: "tentang kami", href: "/about" },

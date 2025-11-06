@@ -1,37 +1,36 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Quote } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const testimonials = [
   {
-    name: "John Doe",
-    role: "Wisatawan",
-    testimonial:
-      "Pelayanan sangat memuaskan! Mobil bersih, driver ramah, dan perjalanan jadi menyenangkan. Pasti akan pesan lagi di sini.",
-    rating: 5,
-    avatar:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Testi 1",
+    avatar: "/galeri-testimoni/testi-1.webp",
   },
   {
-    name: "Jane Smith",
-    role: "Keluarga",
-    testimonial:
-      "Liburan keluarga kami di Jogja jadi lebih mudah dan nyaman berkat Pendopo Trans Nusantara. Terima kasih!",
-    rating: 5,
-    avatar:
-      "https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Testi 2",
+    avatar: "/galeri-testimoni/testi-2.webp",
   },
   {
-    name: "Alex Johnson",
-    role: "Backpacker",
-    testimonial:
-      "Harga sewa mobilnya terjangkau, cocok untuk kantong backpacker seperti saya. Recommended!",
-    rating: 4,
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Testi 3",
+    avatar: "/galeri-testimoni/testi-3.webp",
+  },
+  {
+    name: "Testi 4",
+    avatar: "/galeri-testimoni/testi-4.webp",
+  },
+  {
+    name: "Testi 5",
+    avatar: "/galeri-testimoni/testi-5.webp",
+  },
+  {
+    name: "Testi 6",
+    avatar: "/galeri-testimoni/testi-6.webp",
   },
 ];
 
 const Testimonials = () => {
+  const whatsappNumber = "6281378641157"; // Using Paket Tour number for general inquiries
+
   return (
     <section className="py-16 md:py-20 lg:py-28 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -62,71 +61,20 @@ const Testimonials = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card
+            <div
               key={index}
-              className="card-interactive group relative bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl animate-slide-up"
+              className="relative w-full aspect-video overflow-hidden rounded-lg shadow-lg group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              {/* Quote icon */}
-              <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 animate-bounce-in">
-                <Quote className="w-6 h-6 text-white" />
+              <img
+                src={testimonial.avatar}
+                alt={`Testimonial from ${testimonial.name}`}
+                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-white text-lg font-semibold">Lihat</span>
               </div>
-
-              <CardContent className="p-8 relative">
-                {/* Avatar and info */}
-                <div className="flex items-center mb-6">
-                  <div className="relative">
-                    <img
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-110 transition-transform duration-300 animate-fade-in"
-                    />
-                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-2 border-white animate-pulse"></div>
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="font-bold text-lg text-gray-800 animate-fade-in">
-                      {testimonial.name}
-                    </h3>
-                    <p
-                      className="text-sm text-gray-500 animate-fade-in"
-                      style={{ animationDelay: "0.1s" }}
-                    >
-                      {testimonial.role}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Testimonial text */}
-                <blockquote
-                  className="text-gray-700 mb-6 leading-relaxed italic text-lg animate-fade-in"
-                  style={{ animationDelay: "0.2s" }}
-                >
-                  "{testimonial.testimonial}"
-                </blockquote>
-
-                {/* Rating */}
-                <div
-                  className="flex items-center justify-between animate-fade-in"
-                  style={{ animationDelay: "0.3s" }}
-                >
-                  <div className="flex items-center gap-1">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-5 h-5 text-yellow-400 fill-current animate-pulse"
-                        style={{ animationDelay: `${i * 0.1}s` }}
-                      />
-                    ))}
-                  </div>
-                  <div className="text-sm text-gray-500 font-medium">
-                    {testimonial.rating}.0/5.0
-                  </div>
-                </div>
-
-                {/* Decorative element */}
-                <div className="absolute bottom-4 right-4 w-20 h-20 bg-gradient-to-br from-red-100 to-orange-100 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300 animate-morph"></div>
-              </CardContent>
-            </Card>
+            </div>
           ))}
         </div>
 
@@ -136,15 +84,19 @@ const Testimonials = () => {
             Bergabunglah dengan ribuan pelanggan yang puas dengan layanan kami
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary animate-pulse-glow magnetic animate-bounce-in">
+            <a
+              href={`https://wa.me/${whatsappNumber}?text=Halo, saya ingin memulai perjalanan saya dengan Pendopo Trans Nusantara.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
               Mulai Perjalanan Anda
-            </button>
-            <button
-              className="btn-secondary animate-pulse-glow magnetic animate-bounce-in"
+            </a>
+            <Link to="/galeri-testimoni" className="btn-secondary"
               style={{ animationDelay: "0.2s" }}
             >
               Lihat Semua Testimoni
-            </button>
+            </Link>
           </div>
         </div>
       </div>

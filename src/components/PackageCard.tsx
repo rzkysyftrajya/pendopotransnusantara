@@ -26,9 +26,11 @@ export interface Package {
 export const PackageCard = ({
   pkg,
   whatsappNumber,
+  hidePrice = false,
 }: {
   pkg: Package;
   whatsappNumber: string;
+  hidePrice?: boolean;
 }) => {
   return (
     <Dialog>
@@ -71,11 +73,15 @@ export const PackageCard = ({
 
               <div className="flex justify-between items-end">
                 <div className="flex-1">
-                  <p className="text-sm text-gray-500 mb-1">Mulai dari</p>
-                  <p className="text-2xl font-bold text-gradient">
-                    Rp {pkg.price}
-                  </p>
-                  <p className="text-xs text-gray-400 mt-1">per orang</p>
+                  {!hidePrice && (
+                    <>
+                      <p className="text-sm text-gray-500 mb-1">Mulai dari</p>
+                      <p className="text-2xl font-bold text-gradient">
+                        Rp {pkg.price}
+                      </p>
+                      <p className="text-xs text-gray-400 mt-1">per orang</p>
+                    </>
+                  )}
                 </div>
                 <Button
                   variant="outline"
@@ -145,8 +151,12 @@ export const PackageCard = ({
         </div>
         <div className="flex justify-end gap-4 mt-6 pt-4 border-t">
           <div className="mr-auto">
-            <p className="text-sm text-gray-500">Harga per orang</p>
-            <p className="text-2xl font-bold text-red-600">Rp {pkg.price}</p>
+            {!hidePrice && (
+              <>
+                <p className="text-sm text-gray-500">Harga per orang</p>
+                <p className="text-2xl font-bold text-red-600">Rp {pkg.price}</p>
+              </>
+            )}
           </div>
           <DialogTrigger asChild>
             <Button variant="outline">Tutup</Button>
