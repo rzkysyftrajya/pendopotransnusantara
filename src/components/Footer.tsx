@@ -27,7 +27,8 @@ const Footer = () => {
               komitmen untuk memberikan pengalaman yang tak terlupakan.
             </p>
             <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4 md:mb-6">
-              Jl. Merpati No.rt 01, modalan, Banguntapan, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55198
+              Jl. Merpati No.rt 01, modalan, Banguntapan, Kec. Banguntapan,
+              Kabupaten Bantul, Daerah Istimewa Yogyakarta 55198
             </p>
             <div className="flex items-center gap-3 md:gap-4">
               <div className="w-8 h-8 md:w-10 md:h-10 bg-red-600 rounded-full flex items-center justify-center">
@@ -116,8 +117,24 @@ const Footer = () => {
             <h4 className="text-lg md:text-xl font-bold mb-4 md:mb-6 text-white">
               Lokasi Kami
             </h4>
-            <div className="relative" style={{ paddingBottom: '75%', height: 0 }}>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.6942194204603!2d110.4061928750053!3d-7.822154092198635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57b25594025d%3A0x7424ecb4ad0e4914!2sPendopo%20Trans!5e0!3m2!1sid!2sid!4v1762387181480!5m2!1sid!2sid" style={{ border: "0", position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <div
+              className="relative"
+              style={{ paddingBottom: "75%", height: 0 }}
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.6942194204603!2d110.4061928750053!3d-7.822154092198635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57b25594025d%3A0x7424ecb4ad0e4914!2sPendopo%20Trans!5e0!3m2!1sid!2sid!4v1762387181480!5m2!1sid!2sid"
+                style={{
+                  border: "0",
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -127,9 +144,7 @@ const Footer = () => {
           <p className="text-gray-400 text-xs md:text-sm">
             © {new Date().getFullYear()} Pendopo Trans Nusantara. All rights
             reserved.
-            <span className="block mt-1 md:mt-2 text-xs text-gray-500">
-              Made with ❤️ for unforgettable Yogyakarta experiences
-            </span>
+            <span className="block mt-1 md:mt-2 text-xs text-gray-500"></span>
           </p>
         </div>
       </div>
