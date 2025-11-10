@@ -80,57 +80,68 @@ const Home = () => {
           alt="Hero Section Home"
           className="absolute inset-0 w-full h-full object-cover scale-105"
           loading="eager"
-          fetchpriority="high"
+          fetchPriority="high"
         />
-
-
 
         <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center text-center md:text-left pt-24">
           <div className="animate-slide-in-up">
             <h1 className="text-4xl md:text-7xl font-bold tracking-tight leading-tight mb-6 text-gradient shadow-text">
-              Selamat datang di <br />
-              <span className="text-white">Pendopo Trans Nusantara</span>
+              Paket Wisata Jogja Terbaik <br />
+              <span className="text-white">Tour Jogja Murah & Lengkap</span>
             </h1>
             <p
               className="text-lg md:text-2xl text-gray-100 max-w-3xl mx-auto md:mx-0 mb-10 leading-relaxed font-light animate-slide-in-up"
               style={{ animationDelay: "0.2s" }}
             >
-              Mau liburan di Jogja atau sedang membutuhkan sewa kendaraan ?
-              Kami siap memberikan solusi terbaik untuk kebutuhan perjalanan
-              Anda, dari perencanaan hingga pelaksanaan, memastikan setiap
-              momen liburan Anda menjadi pengalaman yang tak terlupakan.
+              Liburan Jogja Impian Anda! Paket Tour Yogyakarta Lengkap dengan
+              Wisata Jogja Murah, Transportasi, Guide Profesional, dan
+              Pengalaman Tak Terlupakan. Dari Borobudur hingga Pantai Selatan,
+              Semua Dalam Satu Paket Wisata Jogja Terbaik.
             </p>
-                        <div
-                          className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start animate-slide-in-up"
-                          style={{ animationDelay: "0.4s" }}
-                        >
-                          <Button asChild size="lg" className="btn-primary hover-lift">
-                            <Link to="/paket-wisata" className="flex items-center gap-2">
-                              <span>Lihat Paket Wisata</span>
-                              <ArrowRight className="w-5 h-5" />
-                            </Link>
-                          </Button>
-                                                  </div>
-                      </div>
-            
-            
-                    </div>
-                  </section>
+            <div
+              className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start animate-slide-in-up"
+              style={{ animationDelay: "0.4s" }}
+            >
+              <Button asChild size="lg" className="btn-primary hover-lift">
+                <Link to="/paket-wisata" className="flex items-center gap-2">
+                  <span>Lihat Paket Tour Jogja</span>
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="btn-secondary hover-lift"
+              >
+                <a
+                  href={`https://wa.me/${whatsappNumber}?text=Halo, saya ingin informasi paket wisata jogja`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <span>Konsultasi Gratis</span>
+                  <MessageCircle className="w-5 h-5" />
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      {/* Featured Tour Packages */}
+      {/* Featured Tour Packages - Moved Higher */}
       <section className="py-20 md:py-28 gradient-secondary relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
-              Paket Wisata Populer
+              Paket Wisata Jogja Terpopuler
             </h2>
             <p
               className="text-xl text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed animate-fade-in"
               style={{ animationDelay: "0.2s" }}
             >
-              Pilihan terbaik untuk memulai petualangan Anda di Yogyakarta.
-              Setiap paket dirancang untuk memberikan pengalaman yang tak
-              terlupakan.
+              Wisata Jogja Murah & Lengkap! Paket Tour Yogyakarta dengan
+              transportasi, guide, dan pengalaman terbaik untuk liburan Anda.
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto mt-6 rounded-full animate-shimmer"></div>
           </div>
@@ -160,7 +171,7 @@ const Home = () => {
               className="btn-secondary hover-lift"
             >
               <Link to="/paket-wisata" className="flex items-center gap-2">
-                <span>Lihat Semua Paket</span>
+                <span>Lihat Semua Paket Tour Jogja</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
@@ -239,144 +250,63 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Cars Section - More Prominent */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      {/* Transportasi Wisata - Less Prominent */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
-              Sewa Mobil Terbaik di Jogja
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-4">
+              Transportasi Wisata Jogja
             </h2>
             <p
-              className="text-xl text-gray-600 mt-4 max-w-3xl mx-auto leading-relaxed animate-fade-in"
+              className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed animate-fade-in"
               style={{ animationDelay: "0.2s" }}
             >
-              Anda tinggal duduk manis dan menikmati perjalanan Anda dengan
-              nyaman. Mobil Terbaru, Cek Harga Sewa Mobil di Jogja Dengan
-              Driver. Dijamin Nyaman Liburan Bersama Kami
+              Armada lengkap untuk mendukung paket wisata Anda. Mobil nyaman
+              dengan driver berpengalaman siap mengantar liburan Jogja Anda.
             </p>
-            <div
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 animate-slide-in-up"
-              style={{ animationDelay: "0.4s" }}
-            >
-              <Button asChild size="lg" className="btn-primary hover-lift">
-                <a
-                  href={`https://wa.me/${whatsappNumber}?text=Halo, saya ingin informasi sewa mobil di Jogja`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2"
-                >
-                  <span>Hubungi Kami</span>
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-              </Button>
-            </div>
             <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto mt-6 rounded-full animate-shimmer"></div>
           </div>
 
-          {/* Car Cards Grid - More Detailed */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredCars.map((car, index) => (
+          {/* Car Cards Grid - Simplified */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {featuredCars.slice(0, 4).map((car, index) => (
               <div
                 key={car.name}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift overflow-hidden group animate-slide-in-up"
-                style={{ animationDelay: `${index * 0.15}s` }}
+                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift overflow-hidden group animate-slide-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Car Image */}
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-32 overflow-hidden">
                   <img
                     src={car.image}
                     alt={car.name}
-                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <div className="absolute top-4 right-4 bg-gradient-to-r from-red-600 to-red-700 text-white text-xs font-bold px-3 py-1 rounded-full animate-bounce-in">
+                  <div className="absolute top-2 right-2 bg-gradient-to-r from-red-600 to-red-700 text-white text-xs font-bold px-2 py-1 rounded-full">
                     {car.capacity} Orang
                   </div>
                 </div>
 
-                {/* Car Details */}
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2 animate-fade-in">
+                {/* Car Details - Simplified */}
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-gray-800 mb-1">
                     {car.name}
                   </h3>
-
-                  {/* Price */}
-                  <div className="mb-4">
-                    <p className="text-sm text-gray-500">Mulai dari</p>
-                    <p
-                      className="text-3xl font-bold text-gradient animate-fade-in"
-                      style={{ animationDelay: "0.1s" }}
-                    >
-                      Rp {car.price.toLocaleString()}
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      Mobil Dengan Supir + Bensin
-                    </p>
-                  </div>
-
-                  {/* Specifications */}
-                  <div className="space-y-2 mb-6">
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-                      <span>
-                        Durasi Pemakaian {car.duration || "15 Jam"} (max{" "}
-                        {car.maxTime || "22.30"})
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-                      <span>Overtime 10% Dari Tarif Per Jam</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-                      <span>Kapasitas {car.capacity} Orang</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-                      <span>Transmisi {car.transmission || "Matic"}</span>
-                    </div>
-                  </div>
-
-                  {/* Note */}
-                  <div
-                    className="bg-gray-50 p-3 rounded-lg mb-4 animate-fade-in"
-                    style={{ animationDelay: "0.2s" }}
+                  <p className="text-2xl font-bold text-red-600 mb-2">
+                    Rp {car.price.toLocaleString()}
+                  </p>
+                  <Button
+                    asChild
+                    className="w-full btn-primary hover-lift text-sm"
                   >
-                    <p className="text-xs text-gray-600">
-                      Harga Sewa Tidak Termasuk Parkir, Tol, Tiket Masuk Tempat
-                      Wisata
-                    </p>
-                  </div>
-
-                  {/* CTA Button */}
-                  <div
-                    className="flex gap-2 animate-fade-in"
-                    style={{ animationDelay: "0.3s" }}
-                  >
-                    <Button asChild className="flex-1 btn-primary hover-lift">
-                      <a
-                        href={`https://wa.me/${whatsappNumber}?text=Halo, saya ingin sewa ${car.name} untuk tanggal...`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2"
-                      >
-                        <span>Sewa Sekarang</span>
-                        <ArrowRight className="w-4 h-4" />
-                      </a>
-                    </Button>
-                    <Button
-                      asChild
-                      variant="outline"
-                      className="flex-1 btn-secondary hover-lift"
+                    <Link
+                      to="/sewa-mobil"
+                      className="flex items-center justify-center gap-1"
                     >
-                      <Link
-                        to="/sewa-mobil"
-                        className="flex items-center justify-center gap-2"
-                      >
-                        <span>Lihat Detail Harga</span>
-                      </Link>
-                    </Button>
-                  </div>
+                      <span>Lihat Detail</span>
+                      <ArrowRight className="w-3 h-3" />
+                    </Link>
+                  </Button>
                 </div>
               </div>
             ))}
@@ -440,8 +370,6 @@ const Home = () => {
 
       {/* Testimonials */}
       <Testimonials />
-
-
 
       {/* Blog Section */}
       <section className="py-20 md:py-28 bg-white relative overflow-hidden">
@@ -748,8 +676,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-
 
       <Footer />
     </div>

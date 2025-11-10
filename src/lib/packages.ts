@@ -4,7 +4,7 @@ export const oneDayPackages = [
     duration: "1 Hari",
     location: "Yogyakarta",
     short_description:
-      "Jelajahi kegagahan Gunung Merapi dan keindahan sekitarnya dalam satu hari.",
+      "Wisata Jogja Murah! Paket Tour Merapi lengkap dengan Lava Tour, Heha Sky View, dan pengalaman mendaki gunung berapi aktif.",
     destinations: [
       "Pasar Ngasem",
       "Tamansari",
@@ -27,7 +27,7 @@ export const oneDayPackages = [
     duration: "1 Hari",
     location: "Yogyakarta",
     short_description:
-      "Nikmati suasana sejuk hutan pinus dan spot foto unik di Puncak Becici.",
+      "Liburan Jogja Murah! Paket Wisata Yogyakarta ke Hutan Pinus dan Puncak Becici dengan spot foto instagramable terbaik.",
     destinations: [
       "Pasar Ngasem",
       "Taman Sari",
@@ -52,7 +52,7 @@ export const oneDayPackages = [
     duration: "1 Hari",
     location: "Yogyakarta",
     short_description:
-      "Jelajahi pesona alam selatan Jogja, dari kebun buah hingga pantai eksotis.",
+      "Wisata Yogyakarta Murah! Paket Tour Jogja ke Kebun Buah Mangunan, Hutan Pinus, dan Pantai Selatan yang eksotis.",
     destinations: [
       "Kebun Buah Mangunan",
       "Hutan Pinus Mangunan",
@@ -77,7 +77,7 @@ export const oneDayPackages = [
     duration: "1 Hari",
     location: "Yogyakarta",
     short_description:
-      "Saksikan kemegahan Candi Borobudur dan nikmati petualangan VW Safari.",
+      "Paket Wisata Jogja Terbaik! Tour Borobudur lengkap dengan VW Safari, Studio Gamplong, dan Mahaloka Paradise.",
     destinations: [
       "Candi Borobudur",
       "VW Safari",
@@ -100,7 +100,7 @@ export const oneDayPackages = [
     duration: "1 Hari",
     location: "Yogyakarta",
     short_description:
-      "Kunjungi Candi Prambanan yang megah dan nikmati pemandangan dari Obelix Hills.",
+      "Tour Jogja Murah! Paket Wisata Prambanan dengan Tebing Breksi, Obelix Hills, dan Pinus Pengger yang instagramable.",
     destinations: [
       "Tebing Breksi",
       "Obelix Hills",
